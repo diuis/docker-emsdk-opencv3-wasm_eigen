@@ -9,6 +9,7 @@ RUN wget -nv https://bitbucket.org/eigen/eigen/get/3.3.5.zip -P /home/appuser &&
     mkdir /eigen/eigen-eigen-b3f3d4950030/build && \
     cd /eigen/eigen-eigen-b3f3d4950030/build && \
     cmake .. && \
-    make install
+    make install && \
+    rm -Rf /eigen
 
 USER appuser
