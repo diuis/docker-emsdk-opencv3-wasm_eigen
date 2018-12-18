@@ -10,6 +10,6 @@ FROM diuis/docker-emsdk-opencv3-wasm:v1.0.0
 #     make install && \
 #     rm -Rf /eigen
 
+USER root
 RUN apt-get update && apt-get install --no-install-recommends -y libeigen3-dev && \
     apt-get autoremove && apt-get clean
-USER appuser
