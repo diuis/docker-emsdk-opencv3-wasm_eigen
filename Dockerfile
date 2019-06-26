@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-opencv3-wasm:19.04-opencv3.4.6
+FROM diuis/docker-emsdk-opencv3-installed-js:18.10-python2
 
 USER root
 RUN apt-get update && apt-get install --no-install-recommends -y libeigen3-dev && \
