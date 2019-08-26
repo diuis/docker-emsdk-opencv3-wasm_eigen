@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-opencv3-installed-js:19.04-python2-emsdk1.38.42
+FROM diuis/docker-emsdk-opencv3-installed-js:19.04-python2-emsdk1.38.42-opencv3.4.7
 
 USER root
 RUN apt-get update && apt-get install --no-install-recommends -y libeigen3-dev \
